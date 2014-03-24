@@ -1,0 +1,116 @@
+*
+{
+	font-family: Arial;
+	color: #ddddff;
+	font-size: 25px;
+}
+
+body
+{
+	background: #222222;
+	padding:0px;
+	margin:0px;
+}
+
+/* Game basic styles */
+
+/* Game screens: divs and canvas that contain the game */
+.game-screen
+{
+	padding:2px;
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+	background: rgba(0,0,0, 0.7);
+	border: solid 2px #666666;
+	position:absolute;
+	z-index: 1;
+}
+
+.menu-list
+{
+	list-style: none;
+}
+
+.menu-list > li
+{
+	padding: 3px;
+}
+
+.horizontal-menu > li
+{
+	display:inline;
+}
+
+/* Style of all buttons in all menus */
+.game-button
+{
+	background: -webkit-linear-gradient(top, #707070, #909090);
+	background: -moz-linear-gradient(top, #707070, #909090);
+	background: -ms-linear-gradient(top, #707070, #909090);
+	padding: 2px;
+	width: 150px;
+	height: 40px;
+	border: solid 2px #aaaaaa;
+}
+
+.game-button:hover
+{
+	background: -webkit-linear-gradient(top, #606060, #808080);
+	background: -moz-linear-gradient(top, #606060, #808080);
+	background: -ms-linear-gradient(top, #606060, #808080);
+	border: solid 2px #888888;
+}
+
+.game-button:active
+{
+	background: -webkit-linear-gradient(top, #505050, #707070);
+	background: -moz-linear-gradient(top, #505050, #707070);
+	background: -ms-linear-gradient(top, #505050, #707070);
+	border: solid 2px #666666;
+}
+
+#mygame-canvas
+{
+	display: block;
+}
+
+#main-menu
+{
+	z-index: 2;
+}
+
+#start-game-button {
+	position:absolute;
+	left: 325px;
+	top: 270px;
+}
+
+#highscore { 
+	position:absolute;
+	left: 310px;
+	top: 200px;
+	z-index: 3;
+}
+
+.loadingbar
+{
+	position: absolute;
+	width: 600px;
+	height: 10px;
+	background-color: #aa0000;
+	z-index: 3;
+	left: 100px;
+	top : 400px;
+}
+
+.empty
+{
+	width: 40px;
+	z-index: 4;
+}
+
+.full
+{
+	background-color: #cccccc;
+}

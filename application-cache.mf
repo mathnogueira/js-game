@@ -1,0 +1,25 @@
+CACHE MANIFEST
+#2014-03-21
+
+#list all files that will be cached
+CACHE:
+audio/background.mp3
+css/style.css
+images/background/ground.png
+images/background/Hill1.png
+images/background/Hill2.png
+images/background/sky.png
+images/spritesheets/player-spritesheet.png
+images/spritesheets/rock.png
+images/spritesheets/coin.png
+scripts/game/Main.js
+scripts/game/Player.js
+scripts/game/Obstacle.js
+scripts/libs/easeljs-0.7.1.min.js
+scripts/libs/jquery-1.11.0.min.js
+scripts/libs/preloadjs-NEXT.min.js
+index.html
+
+#Resources that require the user to be online
+NETWORK:
+*

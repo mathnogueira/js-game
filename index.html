@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--<html lang="en" manifest="application-cache.mf">-->
+<html lang="en">
+	<head>
+			<!-- Load css files -->
+			<link rel="stylesheet" href="css/style.css" />
+
+			<!-- Window title -->
+			<title>Project 2 :: HTML5 game</title>
+			<!-- Load javascript files -->
+			<script type="text/javascript" src="js/libs/jquery-1.11.0.min.js"></script>
+			<!-- Load EaselJS -->
+			<script type="text/javascript" src="js/libs/easeljs-0.7.1.min.js"></script>
+			<!-- Pre-loading script -->
+			<script type="text/javascript" src="js/libs/preloadjs-NEXT.min.js"></script>
+			<!-- Load game logic -->
+			<script type="text/javascript" src="js/game/Obstacle.js"></script>
+			<script type="text/javascript" src="js/game/Player.js"></script>
+			<script type="text/javascript" src="js/game/Main.js"></script>
+			<script language="javascript">
+				$(document).ready(function(){
+						
+						var game = new Game();
+
+						$("#start-game-button").click(function(){
+							game.startPlaying();
+							$("#main-menu").css("z-index", 0);
+						});
+				});
+			</script>
+	</head>
+
+	<body>
+		<div id="main-menu" class="game-screen game-menu">
+			<ul class="menu-list vertical-menu">
+				<!-- Start button -->
+				<li><button id="start-game-button" class="game-button">Start Game</button></li>
+			</ul>
+		</div>
+		<!-- Loading bar -->
+		<div class="loadingbar full"></div>
+		<div class="loadingbar empty" id="mygame-loadingbar"></div>
+		<!-- High score -->
+		<div id="highscore"></div>
+		<!-- Canvas -->
+		<canvas id="mygame-canvas" class="game-screen" width="800" height="600"></canvas>
+	</body>
+
+	
+
+</html>
