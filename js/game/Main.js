@@ -49,6 +49,7 @@ function Game() {
 	generateObstacles = _generateObstacles;
 	updateObjects = _updateObjects;
 	checkCommands = _checkCommands;
+	checkCommandsMobile = _checkCommandsMobile;
 	this.startPlaying = _startPlaying;
 	gameOver = _gameOver;
 
@@ -163,6 +164,7 @@ function _render()
 
 	// Checks for user inputs
 	document.onkeyup = checkCommands;
+	document.ontouchstart = checkCommandsMobile;
 
 	// Start playing soundtrack
 	bgSound = loader.getResult("soundtrack");
@@ -238,6 +240,14 @@ function _checkCommands(event)
 	{
 		case JUMP_KEY: player.jump(); break;
 	}
+}
+
+/**
+  * Decides which action will be done, for mobile
+  */
+function _checkCommandsMobile(event)
+{
+	player.jump();
 }
 
 /**
