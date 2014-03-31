@@ -164,7 +164,7 @@ function _render()
 
 	// Checks for user inputs
 	document.onkeyup = checkCommands;
-	document.ontouchstart = checkCommandsMobile;
+	document.getElementById(GAME_CANVAS).ontouchstart = checkCommandsMobile;
 
 	// Start playing soundtrack
 	bgSound = loader.getResult("soundtrack");
