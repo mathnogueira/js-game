@@ -279,7 +279,7 @@ function _gameOver()
   */
 function _generateObstacles()
 {
-	var minDistance = 1000;			// Min distance between obstacles
+	var minDistance = 300;			// Min distance between obstacles
 	var maxVariation = 1000;			// This value + minDistance = MaxDistance
 	for (var i = 0; i < NUMBER_OBSTACLES; i++)
 	{
